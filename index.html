@@ -11,7 +11,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-container">
                 <nav class="header-nav">
@@ -79,14 +79,37 @@
                             красу та
                             молодість. <br> З нами краса назавжди!</p>
                     </div>
-                    <ul class="aboutus-faces">
-                        <li class="face-top">
-                            <img class="face-radius" src="images/face-top.jpg" alt="Лице до процедури">
-                        </li>
-                        <li class="face-bottom">
-                            <img class="face-radius" src="images/face-bottom.jpg" alt="Лице після процедури">
-                        </li>
-                    </ul>
+                    <div class="aboutus-faces-and-stars">
+                        <ul class="aboutus-faces">
+                            <li class="face-top">
+                                <img class="face-radius" src="images/face-top.jpg" alt="Лице до процедури">
+                            </li>
+                            <li class="face-bottom">
+                                <img class="face-radius" src="images/face-bottom.jpg" alt="Лице після процедури">
+                            </li>
+                        </ul>
+                        <ul class="aboutus-stars">
+                            <li class="Star-big">
+                                <svg width="64" height="64">
+                                    <use href="./images/icons.svg#Star-big">
+                                    </use>
+                                </svg>
+                            </li>
+                            <li class="Star-middle">
+                                <svg width="40" height="40">
+                                    <use href="./images/icons.svg#Star-middle">
+                                    </use>
+                                </svg>
+                            </li>
+                            <li class="Star-small">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#Star-small">
+                                    </use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -174,7 +197,7 @@
                             </article>
                         </li>
                     </ul>
-                    <button class="carousel-button" type="button">
+                    <button class="carousel-button next" type="button">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"> </use>
                         </svg>
@@ -253,6 +276,7 @@
                         <p class="adress-copyright">&copy; 2022 Дані захищені</p>
                     </div>
                 </address>
+                <img class="bottles" src="./images/bottles.png" alt="Флакони">
             </div>
         </div>
     </footer>

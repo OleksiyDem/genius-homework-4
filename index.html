@@ -59,7 +59,7 @@
             <div class="container">
                 <p>Косметологічна клініка</p>
                 <h1 class="hero-title" lang="en">beauty zone</h1>
-                <button class="button" type="button">Замовити дзвінок</button>
+                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
                 <p class="hero-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -120,14 +120,12 @@
                 <ul class="whywe-list">
                     <li class="whywe-item">
                         <article class="whywe-card">
-                            <div class="whywe-icon-container">
-                                <a href="#"></a>
-                                <svg class="whywe-icon" width="48" height="48">
-                                    <use href="./images/icons.svg#icon-science"></use>
-                                </svg>
-                            </div>
+                            <a href="#"></a>
+                            <svg class="whywe-icon" width="48" height="48">
+                                <use href="./images/icons.svg#icon-science"></use>
+                            </svg>
 
-                            <h3 class="hidden">наші косметологи</h3>
+                            <h3 class="visually-hidden">наші косметологи</h3>
                             <p class="whywe-text">Всі наші косметологи мають вищу медичну освіту та стаж роботи від
                                 5
                                 років
@@ -137,13 +135,12 @@
 
                     <li class="whywe-item">
                         <article class="whywe-card">
-                            <div class="whywe-icon-container">
-                                <a href="#"></a>
-                                <svg class="whywe-icon" width="48" height="48">
-                                    <use href="./images/icons.svg#icon-cosmetics"> </use>
-                                </svg>
-                            </div>
-                            <h3 class="hidden">професійне обладнання</h3>
+                            <a href="#"></a>
+                            <svg class="whywe-icon" width="48" height="48">
+                                <use href="./images/icons.svg#icon-cosmetics"> </use>
+                            </svg>
+
+                            <h3 class="visually-hidden">професійне обладнання</h3>
                             <p class="whywe-text">Використовуємо тільки професійне обладнання та косметику,
                                 перевірену
                                 часом
@@ -152,14 +149,12 @@
                     </li>
                     <li class="whywe-item">
                         <article class="whywe-card">
-                            <div class="whywe-icon-container">
-                                <a href="#"></a>
-                                <svg class="whywe-icon" width="48" height="48">
-                                    <use href="./images/icons.svg#icon-crown"></use>
-                                </svg>
+                            <a href="#"></a>
+                            <svg class="whywe-icon" width="48" height="48">
+                                <use href="./images/icons.svg#icon-crown"></use>
+                            </svg>
 
-                            </div>
-                            <h3 class="hidden">Наша мета</h3>
+                            <h3 class="visually-hidden">Наша мета</h3>
                             <p class="whywe-text">Наша мета - підкреслити переваги та приховати недоліки, а не
                                 переробити
                             </p>
@@ -180,19 +175,19 @@
                     <ul class="procedures-list">
                         <li class="procedures-item">
                             <article class="procedures-card">
-                                <h3 class="hidden">Маски для обличчя</h3>
+                                <h3 class="visually-hidden">Маски для обличчя</h3>
                                 <p class="procedures-text">Маски для обличчя</p>
                             </article>
                         </li>
                         <li class="procedures-item">
                             <article class="procedures-card">
-                                <h3 class="hidden">Ін'єкції для обличчя</h3>
+                                <h3 class="visually-hidden">Ін'єкції для обличчя</h3>
                                 <p class="procedures-text">Ін'єкції для обличчя</p>
                             </article>
                         </li>
                         <li class="procedures-item">
                             <article class="procedures-card">
-                                <h3 class="hidden">Очищення обличчя</h3>
+                                <h3 class="visually-hidden">Очищення обличчя</h3>
                                 <p class="procedures-text">Очищення обличчя</p>
                             </article>
                         </li>
@@ -211,11 +206,38 @@
                 <div class="contact-container">
                     <iframe class="contact-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4785345098394!2d30.517751676333702!3d50.45081307159225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50853c3c51%3A0x6703d85b0d10b524!2z0L_RgNC-0LLRg9C70L7QuiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQsCwgNSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1703777738907!5m2!1suk!2sua"
-                        width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="605" height="482" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <p class="contact-text">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
-                    </p>
+                    <div class="contact-form">
+                        <p class="modal-text">Запишіться <span class="accent">безкоштовно</span> <br> та отримайте
+                            подарунок
+                        </p>
+                        <form name="modal-form" autocomplete="off">
+                            <div class="form-field">
+                                <label class="visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                                <input class="form-input" type="text" id="user-name" placeholder="Ваше ім'я та прізвище"
+                                    required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+                            </div>
+                            <div class="form-field">
+                                <label class="visually-hidden" for="user-tel">Ваш номер телефону</label>
+                                <input class="form-input" type="tel" id="user-tel" placeholder="Ваш номер телефону"
+                                    required pattern="^\+[0-9]{12}">
+                            </div>
+                            <div class="form-field">
+                                <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
+                                <input class="form-input" type="email" id="user-email"
+                                    placeholder="Ваша електронна пошта" required>
+                            </div>
+                            <button class="form-button button">Записатись безкоштовно</button>
+                            <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link"
+                                    href="#">з
+                                    політикою
+                                    конфіденційності</a>
+                            </p>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -280,6 +302,34 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn-close" type="button">Close</button>
+            <h2 class="modal-header">Замовити дзвінок</h2>
+            <p class="modal-text">Запишіться <span class="accent">безкоштовно</span> <br> та отримайте подарунок</p>
+            <form name="modal-form" autocomplete="off">
+                <div class="form-field">
+                    <label class="visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                    <input class="form-input" type="text" id="user-name" placeholder="Ваше ім'я та прізвище" required
+                        pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+                </div>
+                <div class="form-field">
+                    <label class="visually-hidden" for="user-tel">Ваш номер телефону</label>
+                    <input class="form-input" type="tel" id="user-tel" placeholder="Ваш номер телефону" required
+                        pattern="^\+[0-9]{12}">
+                </div>
+                <div class="form-field">
+                    <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
+                    <input class="form-input" type="email" id="user-email" placeholder="Ваша електронна пошта" required>
+                </div>
+                <button class="form-button button">Записатись безкоштовно</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
+                        конфіденційності</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 
 </body>
 

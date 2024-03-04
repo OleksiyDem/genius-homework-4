@@ -229,7 +229,7 @@
                                 <input class="form-input" type="email" id="user-email"
                                     placeholder="Ваша електронна пошта" required>
                             </div>
-                            <button class="form-button button">Записатись безкоштовно</button>
+                            <button class="form-button button" type="submit">Записатись безкоштовно</button>
                             <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link"
                                     href="#">з
                                     політикою
@@ -261,38 +261,40 @@
                     </ul>
                 </nav>
                 <address class="footer-address">
-                    <ul class="address-list">
-                        <li>
-                            <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-                        </li>
-                        <li>
-                            <a class="address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-                        </li>
-                        <li>
-                            <a class="address-link" href="https://maps.app.goo.gl/Nwi6h3xXzPn7cQtK9"
-                                target="_blank">Україна,
-                                м. Київ, вул. Тараса Шевченка 5</a>
-                        </li>
-                        <ul class="address-icons">
-                            <li><a href="#">
-                                    <svg class="address-icon" width="42" height="42">
-                                        <use href="./images/icons.svg#icon-telephone"></use>
-                                    </svg>
-                                </a></li>
-                            <li><a href="#">
-                                    <svg class="address-icon" width="42" height="42">
-                                        <use href="./images/icons.svg#icon-facebook"> </use>
-                                    </svg>
-                                </a></li>
-
-                            <li><a href="#">
-                                    <svg class="address-icon" width="42" height="42">
-                                        <use href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a></li>
+                    <div class="address-contact">
+                        <ul class="address-list">
+                            <li>
+                                <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+                            </li>
+                            <li>
+                                <a class="address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+                            </li>
+                            <li>
+                                <a class="address-link" href="https://maps.app.goo.gl/Nwi6h3xXzPn7cQtK9"
+                                    target="_blank">Україна,
+                                    м. Київ, вул. Тараса Шевченка 5</a>
+                            </li>
                         </ul>
+                        <div class="address-icons">
+                            <a href="#">
+                                <svg class="address-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-telephone"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="address-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-facebook"> </use>
+                                </svg>
+                            </a>
 
-                    </ul>
+                            <a href="#">
+                                <svg class="address-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="address-info">
                         <a class="address-link" href="#">Політика конфіденційності</a>
                         <p class="adress-copyright">&copy; 2022 Дані захищені</p>
@@ -302,7 +304,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
             <h2 class="modal-header">Замовити дзвінок</h2>
@@ -322,7 +324,7 @@
                     <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
                     <input class="form-input" type="email" id="user-email" placeholder="Ваша електронна пошта" required>
                 </div>
-                <button class="form-button button">Записатись безкоштовно</button>
+                <button class="form-button button" type="submit">Записатись безкоштовно</button>
                 <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
                         конфіденційності</a>
                 </p>

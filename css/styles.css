@@ -524,9 +524,9 @@ ul {
 .address-link:hover {
   color: var(--color-brand);
 }
-.address-icons {
+/* .address-icons {
   display: flex;
-}
+} */
 .address-icon {
   fill: var(--color-primary-light);
   transition: fill 0.2s;

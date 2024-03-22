@@ -1,0 +1,29 @@
+.whywe-card {
+  height: 181px;
+  padding: 24px 32px;
+  border-radius: 32px;
+  background-color: var(--color-primary-light);
+  box-shadow: 0px 4px 4px 0px #a8c6f561;
+  text-align: center;
+  @media screen and (max-width: $bp-desktop) {
+    height: 252px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    height: auto;
+  }
+
+  &__icon {
+    // display: block;
+    fill: var(--color-brand);
+    margin: 0 auto 8px;
+    // @media screen and (max-width: $bp-desktop) {
+    //   display: block;
+    // }
+  }
+
+  &__text {
+    color: #000;
+    line-height: 1.33;
+    margin: 0;
+  }
+}

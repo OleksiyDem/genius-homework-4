@@ -1,0 +1,49 @@
+.contact-section {
+  padding: 96px 0;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 40px 0 0;
+  }
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+  &__container {
+    display: flex;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+  &__map {
+    flex-shrink: 0;
+    border-radius: 32px;
+    width: 605px;
+    // height: 482px;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 380px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      width: auto;
+      height: 232px;
+      margin: 0 -24px;
+    }
+  }
+  &__form {
+    border-radius: 23px;
+    width: 100%;
+    // max-width: 442px;
+    height: 100%;
+    // max-height: 482px;
+    background-color: var(--color-primary-dark);
+    background-image: url(../images/form-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 48px 56px;
+    @media screen and (max-width: $bp-desktop) {
+      padding: 24px 42px;
+    }
+  }
+}

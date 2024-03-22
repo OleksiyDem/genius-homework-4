@@ -1,0 +1,35 @@
+.whywe-section {
+  margin: 176px auto 96px;
+  @media screen and (max-width: $bp-desktop) {
+    margin-top: 128px;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    margin-top: 52px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    margin: 0px auto 40px;
+  }
+
+  &__title {
+    max-width: 432px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 48px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      gap: 16px;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    flex-basis: calc((100% - 112px) / 3);
+    @media screen and (max-width: $bp-desktop) {
+      flex-basis: calc((100% - 96px) / 3);
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 52px auto;
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+    }
+  }
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      gap: 42px;
+    }
+  }
+  &__nav {
+    @media screen and (max-width: $bp-tablet) {
+      gap: 42px;
+    }
+  }
+  &__address {
+    @media screen and (max-width: $bp-tablet) {
+      gap: 16px;
+    }
+  }
+  &__menu-link {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+    }
+    &--mobile {
+      @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 8px;
+      }
+    }
+    &:hover {
+      color: var(--color-brand);
+    }
+  }
+
+  &__address-icon {
+    fill: var(--color-primary-light);
+    transition: fill 0.2s;
+    margin-right: 24px;
+
+    &:hover {
+      fill: var(--color-brand);
+    }
+  }
+
+  &__adress-copyright {
+    color: var(--color-secondary-bottom);
+    font-size: 13px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+    }
+  }
+  &__bottles {
+    position: absolute;
+    width: 247px;
+    height: 152px;
+    right: 0;
+    bottom: 0;
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

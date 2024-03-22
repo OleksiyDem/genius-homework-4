@@ -1,0 +1,27 @@
+@import './utils/fonts';
+@import './utils/texts';
+@import './utils/variables';
+@import './utils/utils';
+@import './base';
+
+@import './layouts/container';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/section';
+@import './layouts/aboutus-section';
+@import './layouts/whywe-section';
+@import './layouts/procedures-section';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
+
+@import './components/buttons';
+@import './components/central-background';
+@import './components/form';
+@import './components/stars';
+@import './components/whywe-card';
+@import './components/procedures-card';
+@import './components/pagination';
+@import './components/carousel-button';
+@import './components/links';

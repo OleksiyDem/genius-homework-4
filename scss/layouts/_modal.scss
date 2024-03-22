@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  border-radius: 48px;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/form-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 42px 206px;
+  overflow-y: auto;
+  @media screen and (max-width: $bp-tablet) {
+    padding: 42px 108px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    padding: 42px 56px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    padding: 0;
+    display: inline-block;
+    stroke: var(--color-primary-light);
+    background-color: transparent;
+    fill: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &__header {
+    color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 40px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 48px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 40px;
+    }
+  }
+}

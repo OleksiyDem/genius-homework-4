@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &__top {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  &__footer {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  &__top,
+  &__footer {
+    &:hover {
+      color: var(--color-brand);
+      font-weight: 700;
+    }
+  }
+}

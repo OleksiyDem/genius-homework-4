@@ -1,0 +1,18 @@
+.central-background {
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 50px;
+
+  @media screen and (max-width: $bp-desktop) {
+    background-position-y: -18px;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    background-position-y: -96px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    background-position-y: -156px;
+  }
+}
